@@ -21,7 +21,8 @@ int main()
     }
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; (j < m)&&(fl==1); j++)
+        fl = 1;
+        for (int j = 0; (j < m)&&(fl == 1); j++)
         {
             for (int k = j+1; (k < m)&&(fl==1); k++)
             {
@@ -43,6 +44,7 @@ int main()
     fl = 1;
     for (int j = 0; j < m; j++)
     {
+        fl = 1;
         for (int i = 0; (i < n) && (fl == 1); i++)
         {
             for (int k = i + 1; (k < n) && (fl == 1); k++)
